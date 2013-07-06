@@ -162,7 +162,8 @@ shopt -s histappend
 
 # Make prompt informative
 # See:  http://www.ukuug.org/events/linux2003/papers/bash_tips/
-PS1="\[\033[0;34m\][\u@\h:\w]$\[\033[0m\]"
+#PS1="\[\033[0;34m\][\u@\h:\w]$\[\033[0m\]"
+PS1="\[\033[0;34m\]\u@\h:\w-> \[\033[0m\]"
 
 ## -----------------------
 ## -- 2) Set up aliases --
@@ -175,7 +176,7 @@ alias cp="cp -i"
 set -o noclobber
 
 # 2.2) Listing, directories, and motion
-alias ll="ls -alrtF --color"
+alias ls="ls -F"
 alias la="ls -A"
 alias l="ls -CF"
 alias dir='ls --color=auto --format=vertical'
